@@ -6,7 +6,7 @@ import java.security.SecureRandom;
 public class PasswordGenerator {
 
 
-    // Génération aléatoire du mot de passe selon les critères choisis
+    // Génère un mot de passe aléatoire selon les options choisies par l'utilisateur
     private static final SecureRandom random = new SecureRandom();
 
     // génère un mot de passe de longueur donnée

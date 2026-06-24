@@ -9,7 +9,7 @@ public class PasswordValidator {
 
         try{
 
-            // Exécution de Zxcvbn dans un conteneur Docker pour évaluer la robustesse
+            // Validation de la robustesse du mot de passe via un outil externe exécuté dans Docker
             String command = "const zxcvbn=require('/app/node_modules/zxcvbn'); console.log(zxcvbn('" + password + "').score)";
             ProcessBuilder pb = new ProcessBuilder(
                     "docker",

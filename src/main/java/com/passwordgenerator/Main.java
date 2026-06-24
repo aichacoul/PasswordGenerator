@@ -34,12 +34,12 @@ public class Main {
         PasswordValidator validator = new PasswordValidator();
         System.out.println("\n==== password generator ====");
 
-        // Génération de plusieurs mots de passe (mode rafale)
+        // Application CLI de génération de mots de passe sécurisés
         for (int i = 1; i <= options.quantity; i++) {
 
             String password = generator.géneratePassword(options);
 
-            // Analyse du mot de passe via Docker + Zxcvbn
+            //  Utilise un mode rafale et une analyse via Docker + Zxcvbn
             int score = validator.getScore(password);
             String level;
 
